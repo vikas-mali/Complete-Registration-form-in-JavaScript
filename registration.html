@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+</head>
+
+<body>
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="logo.png" alt="Logo">
+                <h3>Welcome</h3>
+                <p>You have to register on my website and learn Programming</p>
+                <a href="login.html" class="nav-link login" id="home-tab">Login</a>
+            </div>
+            <div class="col-md-9 register-right">
+                <ul class="nav nav-tabs nav-justify" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">Student</a>
+                    </li>
+                </ul>
+                <div clas="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" is="home" role="tabpanel" aria-labelldby="home-tab">
+                        <h3 class="register-heading">Apply as a student</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" id="fname" class="form-control fname" placeholder="First Name" value="" required autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="lname" class="form-control lname" placeholder="Last Name" value="" required autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="uname" class="form-control uname" placeholder="User Name" value="" required autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="address" class="form-control address" placeholder="Address" value="" required autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <div class="maxl">
+                                        <label for="" class="radio inline">
+                                                <input type="radio"
+                                                    name="gender" value="male"
+                                                    checked>
+                                                <span>male</span>
+                                            </label>
+                                        <label for="" class="radio inline">
+                                                <input type="radio"
+                                                    name="gender"
+                                                    value="female">
+                                                <span>female</span>
+                                            </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control email" placeholder="Your Email" value="" required autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control pass" id="pass" placeholder="Enter Password" value="" required autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="confpass" class="form-control conpass" placeholder="Confirm password" value="" required autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btnRegister" value="Register">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row validResult" style="margin-left:20%;padding-bottom: 50px;">
+                            <div class="col-md-12 error" style="font-size:
+                                    18px;">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
